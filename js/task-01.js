@@ -1,3 +1,5 @@
-const categories = document.getElementById("list");
+function 
+
+let categories = document.getElementById("categories");
 
 console.log(categories);

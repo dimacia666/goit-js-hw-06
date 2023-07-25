@@ -7,10 +7,7 @@ const ingredients = [
   'Condiments',
 ];
 
-const ingredients = document.getElementById("ingredients");
-
-
-const ulEl = document.createElement("ul");
+const ulEl = document.getElementById("ingredients");
 
 for (const ingredient of ingredients) {
   const liEl = document.createElement("li");
