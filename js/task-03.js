@@ -12,3 +12,11 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+
+for (const image of images) {
+  const liEl = document.createElement("image");
+  liEl.textContent = image;
+
+}
+  
+
