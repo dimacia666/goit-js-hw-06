@@ -13,10 +13,14 @@ const images = [
   },
 ];
 
-for (const image of images) {
-  const liEl = document.createElement("image");
-  liEl.textContent = image;
 
+
+for (const { url, alt } of images) {
+  const imgEl = document.createElement("img");
+  imgEl.textContent = url;
+  imgEl.textContent = alt;
+  imgEl.type = "img"
+ 
 }
   
 
