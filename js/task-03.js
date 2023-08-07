@@ -14,13 +14,10 @@ const images = [
 ];
 
 
+const ulGalery = document.querySelector(".gallery"); 
 
-for (const { url, alt } of images) {
-  const imgEl = document.createElement("img");
-  imgEl.textContent = url;
-  imgEl.textContent = alt;
-  imgEl.type = "img"
- 
-}
+
+const imageList = images
+  .map(image) => { '<li> img src='${image.url}'  </li>'}
   
 

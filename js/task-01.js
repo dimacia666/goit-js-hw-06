@@ -10,9 +10,3 @@ Array.from(categories).forEach((categoryUl) => {
   liCountPerUl[category] = elementsCount;
 });
 
-console.log(`Number of categories: ${categories.length}`);
-
-for (const category in liCountPerUl) {
-  console.log(`Category: ${category}`);
-  console.log(`Elements: ${liCountPerUl[category]}`);
-}
