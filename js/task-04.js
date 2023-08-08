@@ -1,7 +1,21 @@
-const numberСhange = document.getElementById(counter);
-const valueNumber = document.getElementById(value);
 
-let counterValue = {};
+const decrementButton = document.querySelector('[data-action="decrement"]');
+const incrementButton = document.querySelector('[data-action="increment"]');
+const valueSpan = document.getElementById('value');
 
-console.log(counter);
-console.log(value);
+
+let counterValue = 0;
+
+
+valueSpan.textContent = counterValue;
+
+
+decrementButton.addEventListener('click', () => {
+  counterValue -= 1;
+  valueSpan.textContent = counterValue;
+});
+
+incrementButton.addEventListener('click', () => {
+  counterValue += 1;
+  valueSpan.textContent = counterValue;
+});
