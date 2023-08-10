@@ -7,15 +7,14 @@ loginForm.addEventListener('submit', function (event) {
   const passwordInput = loginForm.elements.password;
   
   if (emailInput.value.trim() === '' || passwordInput.value.trim() === '') {
-    alert('All fields must be filled!');
-  } else {
-    const formData = {
-      email: emailInput.value,
-      password: passwordInput.value
-    };
-    
-    console.log(formData); // Выводим обьект с данными в консоль
-    loginForm.reset(); // Очищаем значения полей формы
+    return alert('All fields must be filled!');
   }
+    
+  const formData = {
+    email: emailInput.value,
+    password: passwordInput.value
+  };
+  
+  console.log(formData); // Выводим объект с данными в консоль
+  loginForm.reset(); // Очищаем значения полей формы
 });
-
