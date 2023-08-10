@@ -2,7 +2,7 @@ const ingredients = [
   'Potatoes',
   'Mushrooms',
   'Garlic',
-  'Tomatos',
+  'Tomatoes',
   'Herbs',
   'Condiments',
 ];
@@ -15,5 +15,5 @@ for (const ingredient of ingredients) {
   ulEl.appendChild(liEl);
 }
 
-document.body.appendChild(ulEl);
+
 
